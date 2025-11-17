@@ -1,1 +1,3 @@
-# pico-belt-pneumatic-control
+### Conveyor & Pneumatic Actuator Control (MicroPython - Raspberry Pi Pico)
+
+This script controls an automated pill-inspection conveyor system using a stepper motor, dual light sensors, and a pneumatic actuator. The stepper motor is driven continuously while the Pico listens for serial commands from an external detection module. When the command DEFECT is received, the conveyor moves to a predefined position and the pneumatic actuator lifts to remove the defective pill before returning to its resting state. The two light sensors measure how long an object blocks the beam, allowing the system to reverse and realign the conveyor based on timing. The program loops until manually stopped, ensuring coordinated motor motion, defect handling, and sensor-based positioning for reliable inspection workflow.
